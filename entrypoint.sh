@@ -5,8 +5,10 @@ set -e
 # Install Dependencies #
 #----------------------#
 
-apt-get install -y "$DEPENDENCIES"
-
+DEPENDENCIES="$1"
+if [ -e "$DEPENDENCIES" ]; then
+  apt-get install -y "$DEPENDENCIES"
+fi
 #---------------#
 # Build Project #
 #---------------#

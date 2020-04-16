@@ -5,8 +5,8 @@ set -e
 # Install Dependencies #
 #----------------------#
 
-DEPENDENCIES="$1"
-if [ -e "$DEPENDENCIES" ]; then
+DEPENDENCIES="$*"
+if [ -n "$DEPENDENCIES" ]; then
   apt-get install -y "$DEPENDENCIES"
 fi
 #---------------#

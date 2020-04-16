@@ -5,7 +5,7 @@ set -e
 # Install Dependencies #
 #----------------------#
 
-apt-get install -y  "$DEPENDENCIES"
+apt-get install -y "$DEPENDENCIES"
 
 #---------------#
 # Build Project #

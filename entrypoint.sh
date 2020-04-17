@@ -6,8 +6,8 @@ set -e
 #----------------------#
 
 DEPENDENCIES="$*"
-if [ -n $DEPENDENCIES ]; then
-  apt-get install -y "$DEPENDENCIES"
+if [ -n "$DEPENDENCIES" ]; then
+  apt-get install -y $DEPENDENCIES
 fi
 #---------------#
 # Build Project #

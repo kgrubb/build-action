@@ -1,4 +1,4 @@
-FROM elementary/docker:unstable
+FROM elementary/docker:stable
 
 ENV DEBIAN_FRONTEND=noninteractive
 

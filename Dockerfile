@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM elementary/docker:unstable
 
 ENV DEBIAN_FRONTEND=noninteractive
 

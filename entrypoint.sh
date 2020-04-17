@@ -6,7 +6,7 @@ set -e
 #----------------------#
 
 DEPENDENCIES="$*"
-if [ -n "$DEPENDENCIES" ]; then
+if [ -n $DEPENDENCIES ]; then
   apt-get install -y "$DEPENDENCIES"
 fi
 #---------------#
